@@ -3,7 +3,12 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.4.33403.182
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Grid1", "Grid1\Grid1.csproj", "{0A3A97B9-9A63-4006-A4D1-A9B3DDF2ADD5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Grid1", "Grid1\Grid1.csproj", "{0A3A97B9-9A63-4006-A4D1-A9B3DDF2ADD5}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Anlatım", "Anlatım", "{60C10FE6-A3DC-45AC-BDA2-86AB8FEF08D4}"
+	ProjectSection(SolutionItems) = preProject
+		Anlatım\BST206-2023.pdf = Anlatım\BST206-2023.pdf
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
