@@ -5,9 +5,9 @@ VisualStudioVersion = 17.4.33403.182
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Grid1", "Grid1\Grid1.csproj", "{0A3A97B9-9A63-4006-A4D1-A9B3DDF2ADD5}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Öğrenenler İçin", "Öğrenenler İçin", "{60C10FE6-A3DC-45AC-BDA2-86AB8FEF08D4}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Öğrenenler için", "Öğrenenler için", "{60C10FE6-A3DC-45AC-BDA2-86AB8FEF08D4}"
 	ProjectSection(SolutionItems) = preProject
-		Anlatım\WPF ile Görsel Programlamaya Giriş.pdf = Anlatım\WPF ile Görsel Programlamaya Giriş.pdf
+		Öğrenenler için\WPF ile Görsel Programlamaya Giriş.pdf = Öğrenenler için\WPF ile Görsel Programlamaya Giriş.pdf
 	EndProjectSection
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Grid2", "Grid2\Grid2.csproj", "{6E8E54BD-8A01-4E06-A989-BD5F89FD19FC}"
