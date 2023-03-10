@@ -12,6 +12,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Öğrenenler için", "Öğr
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Grid2", "Grid2\Grid2.csproj", "{6E8E54BD-8A01-4E06-A989-BD5F89FD19FC}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Grid3", "Grid3\Grid3.csproj", "{D656D200-7D39-44A9-B1D2-FB1D40BABEFB}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -26,6 +28,10 @@ Global
 		{6E8E54BD-8A01-4E06-A989-BD5F89FD19FC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6E8E54BD-8A01-4E06-A989-BD5F89FD19FC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6E8E54BD-8A01-4E06-A989-BD5F89FD19FC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D656D200-7D39-44A9-B1D2-FB1D40BABEFB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D656D200-7D39-44A9-B1D2-FB1D40BABEFB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D656D200-7D39-44A9-B1D2-FB1D40BABEFB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D656D200-7D39-44A9-B1D2-FB1D40BABEFB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -1,0 +1,90 @@
+﻿<Window x:Class="Grid3.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Grid3"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="350" Width="400">
+        
+        <!--Bu blokta pencerenin kullandığı görsel kaynaklar olacak.-->
+    <Window.Resources>
+            <!--Örnek olarak, bu penceredeki tüm düğmelere uygulanacak bir stil tanımı koyduk.-->
+        <Style TargetType="Button">
+            <Setter Property="Margin" Value="5"/>
+        </Style>
+    </Window.Resources>
+    
+        <!--Hesap makinesi arayüzünü barındıran dış kafes panel-->
+    <Grid>
+            <!--Dış kafes panelin iki yatay bölmesi var.-->
+        <Grid.RowDefinitions>
+                <!--Üst yatay bölme yüksekliği sabit.-->
+            <RowDefinition Height="75"/>
+                <!--Alt yatay bölme dış panel yüksekliğinin geri kalanını dolduruyor.-->
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+            <!--Hesap makinesi ekranını temsil eden metin blok kontrolü-->
+        <TextBlock Grid.Row="0" Text="Ekran" Background="Beige"/>
+            <!--Hesap makinesi tuştakımlarını barındıran iç kafes panel-->
+        <Grid Grid.Row="1" Background="Aqua">
+                <!--İç panelin dikey bölmeleri panel genişliğini 3:2 oranında paylaşıyorlar.-->
+            <Grid.ColumnDefinitions>
+                    <!--Sol bölme genişliği panel genişliğinin 3/5'i kadar (yani %60).-->
+                <ColumnDefinition Width="3*"/>
+                <!--Sağ bölme genişliği panel genişliğinin 2/5'i kadar (yani %40).-->
+                <ColumnDefinition Width="2*"/>
+            </Grid.ColumnDefinitions>
+            
+                <!--Rakam düğmelerini barındıran kafes panel-->
+            <Grid Grid.Column="0">
+                    <!--Yüksekliği belirtilmeyen bu yatay bölmeler eşit yüksekliğe sahip olacak.-->
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+                
+                    <!--Genişliği belirtilmeyen bu dikey bölmeler eşit genişliğe sahip olacak.-->
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+                
+                    <!--Rakam düğmelerini ait oldukları bölme numaralarıyla sıralıyoruz.-->
+                <Button Grid.Row="0" Grid.Column="0" Content="1"/>
+                    <!--Yerlerini doğru belirlemişsek, nasıl sıralandıkları fark etmez.-->
+                <Button Grid.Row="2" Grid.Column="2" Content="9"/>
+                <Button Grid.Row="0" Grid.Column="1" Content="2"/>
+                <Button Grid.Row="0" Grid.Column="2" Content="3"/>
+                <Button Grid.Row="1" Grid.Column="0" Content="4"/>
+                <Button Grid.Row="1" Grid.Column="1" Content="5"/>
+                <Button Grid.Row="1" Grid.Column="2" Content="6"/>
+                <Button Grid.Row="2" Grid.Column="0" Content="7"/>
+                <Button Grid.Row="2" Grid.Column="1" Content="8"/>
+                <Button Grid.Row="3" Grid.Column="1" Content="."/>
+                <Button Grid.Row="3" Grid.Column="0" Content="0"/>
+                <Button Grid.Row="3" Grid.Column="2" Content="="/>
+            </Grid>
+
+                <!--İşlem düğmelerini barındıran kafes panel-->
+            <Grid Grid.Column="1">
+                    <!--İşlem düğmeleri yatay bölmelerde gözükecek.-->
+                <Grid.RowDefinitions>
+                        <!--Yüksekliği belirtilmeyen bu yatay bölmeler eşit yüksekliğe sahip olacak.-->
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+
+                <Button Content="+" Grid.Row="0"/>
+                <Button Content="-" Grid.Row="1"/>
+                <Button Content="*" Grid.Row="2"/>
+                <Button Content="/" Grid.Row="3"/>
+            </Grid>
+        </Grid>
+    </Grid>
+</Window>
