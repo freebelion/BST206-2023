@@ -6,7 +6,7 @@ boş bir WPF masaüstü uygulaması oluşturuyoruz.
 Visual Studio geliştirme ortamındaki proje
 oluştururken şablon (*template*) seçimini
 aşağıdaki gibi yaptık:
-![](Resim1.png)
+![](Resimler/Resim1.png)
 
 Bu şablon seçimi aşamasında "WPF App" (WPF Uygulaması)
 etiketli iki seçenek olduğunu görüyorsunuz.
@@ -26,7 +26,7 @@ küçük farklar görebilirsiniz.
 
 Devam edelim: Şablon seçinden sonraki aşamada proje adını veriyoruz ve
 projeyi oluşturacak sonraki aşamaya geçiyoruz:
-![](Resim2.png)
+![](Resimler/Resim2.png)
 
 En son aşamada hangi .NET sürümünü kullanacaksınız
 diye bir tercih formu daha çıkabilir.
@@ -114,7 +114,7 @@ namespace Grid1
 Bu iki dosya aslında uygulamanın ana penceresinin
 (`MainWindow`) iki ayrı yüzü sayılırlar.<br>
 Proje organizasyonu görünümünde de birlikte yer alırlar:
-![](Resim3.png)
+![](Resimler/Resim3.png)
 Uygulama kodlarını içeren bu dosyayı kapatıp geçebilirsiniz.
 Bu ilk denememizde yalnızca uygulama penceresinin
 görsel özellikleri ve görünüm düzeni ile uğraşacağız.
