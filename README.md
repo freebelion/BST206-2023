@@ -116,10 +116,12 @@ namespace Grid1
    }
 }
 ```
+
 Bu iki dosya aslında uygulamanın ana penceresinin
 (`MainWindow`) iki ayrı yüzü sayılırlar.<br>
 Proje organizasyonu görünümünde de birlikte yer alırlar:
 ![](Resimler/Resim3.png)
+
 Uygulama kodlarını içeren bu dosyayı kapatıp geçebilirsiniz.
 Bu ilk denememizde yalnızca uygulama penceresinin
 görsel özellikleri ve görünüm düzeni ile uğraşacağız.
@@ -142,6 +144,7 @@ modunda, dilerseniz de CTRL+F5 tuş kombinezonuyla
 çalıştırabilirsiniz.
 Uygulama penceresi belirlediğiniz özelliklerle ekrana
 gelecektir.
+
 Hiçbir kod içermediği için henüz bir şey yapmayacaktır,
 ama alıştığınız başka görsel uygulamalardaki gibi
 uygulama penceresini küçültüp büyültebilecek
@@ -228,6 +231,7 @@ orada listelenen kontrollerden metin bloğu
 (`TextBlock`) kontrolünü seçtik,
 ve sürükleyerek kafes panelin üst bölmesine yerleştirdik:
 ![](Resimler/Resim5.png)
+
 > Bu kontrol içinde bir metin görüntüler,
 ama yalnızca görüntüler.
 Belki daha alışkın olduğunuz "Metin Kutusu" (`TextBox`)
@@ -412,7 +416,7 @@ bakmalıyız:
    </Grid.RowDefinitions>
 ```
 
-Yukarıdkai `RowDefinitions` bloğu kafes panelin
+Yukarıdaki `RowDefinitions` bloğu kafes panelin
 yatay bölme (yani "satır", row) tanımlarını içeriyor.
 
 Satır tanımını yapan her iki `RowDefinition` öğesindeki
@@ -487,6 +491,7 @@ yapacağız.
 Örneğin, önceki denememizde gördüğümüz yatay bölme
 tanımlarını (`RowDefinitions`) elle ekleyeceğiz:
 ![](Resimler/Resim10.png)
+
 Bu ekran resmindeki gibi, "akıllı tamamlayıcı"
 (*Intellisense*) kafes panelin XAML bloku içine
 konabilecek kodların bir listesini getirirken,
@@ -740,6 +745,3 @@ Bu değişiklikleri de yapıp deneyin;
 artık sözde hesap makinesinin düğmeleri
 etraflarında 5'er DIU boşluk kalacak şekilde
 yerleşmiş olacaktır.
-
-## StackWrap1
-Bu örnek projede 
