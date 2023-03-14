@@ -9,9 +9,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Grid2", "Grid2\Grid2.csproj
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Grid3", "Grid3\Grid3.csproj", "{D656D200-7D39-44A9-B1D2-FB1D40BABEFB}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Öğrenenler için", "Öğrenenler için", "{72A8405B-0624-4213-8EAF-794F31075FF5}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{C02580AB-94A3-4B7A-932C-B372E7B3A575}"
 	ProjectSection(SolutionItems) = preProject
-		Öğrenenler için\WPF ile Görsel Programlamaya Giriş.md = Öğrenenler için\WPF ile Görsel Programlamaya Giriş.md
+		Öğrenenler için\README.md = Öğrenenler için\README.md
 	EndProjectSection
 EndProject
 Global
