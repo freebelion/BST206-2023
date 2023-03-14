@@ -1,4 +1,9 @@
 ﻿# BST206-2023
+Bu proje grubunda C# programlama diliyle
+WPF tabanlı görsel uygulamalar geliştirecek
+olan öğrencilere örnekler sunuyoruz.<br>
+Umarız konuyla ilgilenen başka kişilerin de
+bir şeyler öğrenmesine katkısı olacaktır.
 
 ## Grid1
 Bu başlangıç örneğinde C# programlama diliyle
@@ -735,3 +740,6 @@ Bu değişiklikleri de yapıp deneyin;
 artık sözde hesap makinesinin düğmeleri
 etraflarında 5'er DIU boşluk kalacak şekilde
 yerleşmiş olacaktır.
+
+## StackWrap1
+Bu örnek projede 
