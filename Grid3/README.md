@@ -26,6 +26,7 @@ değil, penceredeki kafes panelin XAML tanım blokunda
 yapacağız.
 Örneğin, önceki denememizde gördüğümüz yatay bölme
 tanımlarını (`RowDefinitions`) elle ekleyeceğiz:
+
 ![](../Resimler/Resim10.png)
 
 Bu ekran resmindeki gibi, "akıllı tamamlayıcı"

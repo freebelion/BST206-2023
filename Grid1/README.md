@@ -5,7 +5,7 @@ Visual Studio geliştirme ortamındaki proje
 oluştururken şablon (*template*) seçimini
 aşağıdaki gibi yaptık:
 
-![](../Resimler/Resim1.png)
+![Resim1](../Resimler/Resim1.png)
 
 Bu şablon seçimi aşamasında "WPF App" (WPF Uygulaması)
 etiketli iki seçenek olduğunu görüyorsunuz.

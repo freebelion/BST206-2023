@@ -27,6 +27,7 @@ gösterilen bantlar varmış gibi gözüktü.
 
 Sol kenar bandının belli bir yerinde tıklayınca,
 kafes paneli iki yatay bölmeye ayırmış olduk:
+
 ![](../Resimler/Resim4.png)
 
 ```
@@ -60,6 +61,7 @@ Sonra da görünümünü ve konumunu belirleyen
 daha iyi fark edelim diye uygulama penceresini
 biraz daralltık.
 Genişliğini (`Width`) 400 piksel yaptık.
+
 "Piksel" demişken, aslında pek de doğru bir şey yazmadık.
 Normalde bilgisayarlarla bütünleşik veya ayrı kullanılan
 ekran boyutlarına göre, gerçek piksel
@@ -77,6 +79,7 @@ Araç Kutusunu (*Toolbox*) açıp,
 orada listelenen kontrollerden metin bloğu
 (`TextBlock`) kontrolünü seçtik,
 ve sürükleyerek kafes panelin üst bölmesine yerleştirdik:
+
 ![](../Resimler/Resim5.png)
 
 > Bu kontrol içinde bir metin görüntüler,
@@ -117,6 +120,7 @@ Siz istediğiniz başka bir sözcük veya cümle yazın.
 
 Başka değişiklikler yapmadan önce de uygulamayı çalıştırıp
 denedik:
+
 ![](../Resimler/Resim6.png)
 
 Gördüğünüz gibi, yeni belirlediğimiz metin gözüküyordu,
@@ -147,6 +151,7 @@ geri plan rengi verelim:
            Text="Metin Blok Kontrol" />
 ```
 Şimdiki görünümü daha belirgindir:
+
 ![](../Resimler/Resim7.png)
 
 Peki bu kontrolün boyutlarını belirleyen özellikler nerede?
@@ -224,6 +229,7 @@ Bunu görmek için `HorizontalAlignment` ve
 `VerticalAlignment` özelliklerini sildik.
 O zaman `Margin` özelliğinin dört değerinin de
 etkin olduğunu gördük:
+
 ![](../Resimler/Resim8.png)
 
 Sol ve üstten on birim boşluk varken,
@@ -243,6 +249,7 @@ ve uygulama penceresini büyültüp küçülttüğümüzde
 blok kontrolün de pencereyle orantılı boyutlandığını gördük;
 genişliği pencere iç genişliği ile aynı kalırken,
 yüksekliği üst bölmenin pencereye orantısıyla değişiyordu.
+
 ![](../Resimler/Resim9.png)
 
 Sağ altta resmini gösterdiğimiz son denemede

@@ -5,18 +5,65 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:StackWrap1"
         mc:Ignorable="d"
-        Title="StackPanel ve WrapPanel" Height="450" Width="800">
+        Title="StackPanel ve WrapPanel" Height="450" Width="800"
+        FontFamily="Times New Roman" FontSize="24">
+
+    <Window.Resources>
+        <Style TargetType="TextBlock">
+            <Setter Property="Background" Value="LightGray"/>
+            <Setter Property="Margin" Value="2"/>
+            <Setter Property="Padding" Value="5"/>
+        </Style>
+    </Window.Resources>
+    
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="30*"/>
             <RowDefinition Height="70*"/>
         </Grid.RowDefinitions>
 
-        <Grid Grid.Row="1">
-            <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="30*"/>
-                <ColumnDefinition Width="70*"/>
-            </Grid.ColumnDefinitions>
-        </Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="30*"/>
+            <ColumnDefinition Width="70*"/>
+        </Grid.ColumnDefinitions>
+
+        <StackPanel Grid.Row="0" Orientation="Horizontal" Grid.ColumnSpan="2"
+                    ToolTip="StackPanel için Orientation=Horizontal elemanların yan yana dizilmesini sağlar.">
+            <TextBlock Text="TRY"/>
+            <TextBlock Text="USD"/>
+            <TextBlock Text="EUR"/>
+            <TextBlock Text="GBP"/>
+            <TextBlock Text="CHF"/>
+        </StackPanel>
+
+        <StackPanel Grid.Row="1" Grid.Column="0"
+                        ToolTip="StackPanel için Orientation=Vertical elemanların alt alta dizilmesini sağlar.">
+            <TextBlock Text="TRY"/>
+            <TextBlock Text="USD"/>
+            <TextBlock Text="EUR"/>
+            <TextBlock Text="GBP"/>
+            <TextBlock Text="CHF"/>
+        </StackPanel>
+
+        <WrapPanel Grid.Row="1" Grid.Column="1" Orientation="Horizontal"
+                       ToolTip="WrapPanel için Orientation=Horizontal elemanların yan yana dizilmesini sağlar, ama ilk satır bittiğinde sıralama bir alttan devam eder.">
+            <TextBlock Text="TRY"/>
+            <TextBlock Text="USD"/>
+            <TextBlock Text="EUR"/>
+            <TextBlock Text="GBP"/>
+            <TextBlock Text="CHF"/>
+            <TextBlock Text="MXN"/>
+            <TextBlock Text="MZN"/>
+            <TextBlock Text="NGN"/>
+            <TextBlock Text="PYG"/>
+            <TextBlock Text="DKK"/>
+            <TextBlock Text="ANG"/>
+            <TextBlock Text="FKB"/>
+            <TextBlock Text="AUD"/>
+            <TextBlock Text="KMD"/>
+            <TextBlock Text="LCF"/>
+            <TextBlock Text="XOU"/>
+            <TextBlock Text="ZUX"/>
+        </WrapPanel>
     </Grid>
 </Window>

@@ -14,7 +14,11 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		README.md = README.md
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StackWrap1", "StackWrap1\StackWrap1.csproj", "{E2E1105C-D70D-42F2-854B-E3E7DC5330B1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StackWrap1", "StackWrap1\StackWrap1.csproj", "{E2E1105C-D70D-42F2-854B-E3E7DC5330B1}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Canvas1", "Canvas1\Canvas1.csproj", "{F34AD422-A86C-4C5B-B0D9-5C49E657397F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dock1", "Dock1\Dock1.csproj", "{AB1B1198-046F-42DC-B59D-A750B9E3029A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -38,6 +42,14 @@ Global
 		{E2E1105C-D70D-42F2-854B-E3E7DC5330B1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E2E1105C-D70D-42F2-854B-E3E7DC5330B1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E2E1105C-D70D-42F2-854B-E3E7DC5330B1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F34AD422-A86C-4C5B-B0D9-5C49E657397F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F34AD422-A86C-4C5B-B0D9-5C49E657397F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F34AD422-A86C-4C5B-B0D9-5C49E657397F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F34AD422-A86C-4C5B-B0D9-5C49E657397F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AB1B1198-046F-42DC-B59D-A750B9E3029A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AB1B1198-046F-42DC-B59D-A750B9E3029A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AB1B1198-046F-42DC-B59D-A750B9E3029A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AB1B1198-046F-42DC-B59D-A750B9E3029A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
