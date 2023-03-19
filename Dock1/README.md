@@ -43,13 +43,15 @@ Paneli" diyebileceğimiz **Border** içine koyduk.
 
 + **DockPanel.Dock** özellik atamaları
   **DockPanel**'in "çocukları" için
-  yerleşim düzenini belirler, ama onların
-  boyutları hakkında hiç bir sınırlama
+  yerleşim düzenini belirler, ama kendi
+  boyutlarını belirleyecek özellikleri yoksa-,
+  onların boyutları hakkında hiç bir sınırlama
   getirmez.
 
 + Çerçeveli **Border** panelleri de
   yalnızca içerikleri etrafında bir çerçeve
-  eklerler; onlar da içerdikleri panel
+  eklerler; onlar da -kendi boyutları
+  ayrıca belirlenmemişse- içerdikleri panel
   veya kontrol için boyut sınırlaması getirmezler.
 
 + Bu durumda, boyut veya konum belirleyecek
