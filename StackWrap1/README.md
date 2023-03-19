@@ -22,11 +22,10 @@ Tek amacımız bu sunucuların *containers*
 görünümünü ve düzenini belirleyen
 önemli özellikleri göstermek.
 
-+ **Grid.ColumnSpan**<br>
-    Kafes panelin üst bölmesine koyduğumuz
-    **StackPanel** iki sütuna da yayılsın
-    diye, XAML tanım başlığına
-    `Grid.ColumnSpan = "2"` atamasını ekledik.
++ Kafes panelin üst bölmesine koyduğumuz
+  **StackPanel** iki sütuna da yayılsın
+  diye, XAML tanım başlığına
+  **`Grid.ColumnSpan = "2"`** atamasını ekledik.
 
 + Alt sol bölmeye koyduğumuz **StackPanel**
   içindeki metin blokları alt alta sıralanmış.
@@ -48,7 +47,7 @@ görünümünü ve düzenini belirleyen
   Ama yüksekliklerini belirleyecek başka özellik
   olmadığı için, her birinin yüksekliği
   onları barındıran **StackPanel** yüksekliği
-  ile aynı.
+  ile aynıdır.
 
 + Öte yandan, sol alttaki **StackPanel** içindeki
   metin bloklarının yükseklikleri içlerindeki
@@ -76,5 +75,4 @@ görünümünü ve düzenini belirleyen
   bir alt satıra geçip yatay sıralanmaya devam
   ettiler.
   > Bu yüzden bu tür panele *sarıcı panel* dedik.
-
 
