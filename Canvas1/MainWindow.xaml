@@ -35,5 +35,8 @@
 
         <Ellipse Width="90" Height="120" Fill="Yellow"
                    Canvas.Left="250" Canvas.Top="10"/>
+        
+        <Polygon Stroke="Black" StrokeThickness="1" Fill="Green"
+                 Points="450,50 300,200 450,350 580,380 600,150 "/>
     </Canvas>
 </Window>
