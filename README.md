@@ -1310,6 +1310,8 @@ tanımladık ve onu da bir stil tanımı içine koyduk:
 DoubleAnimation ondalıklı bir sayısal değere uygulanabilen
 bir animasyon türüdür. Sürekli bir değer değişimi gerçekleştirir;
 ondalıklı değer için olmasının nedeni budur.
+> *Bir tamsayı değeri sürekli bir animasyonla değil,
+   aşamalı bir animasyonla değiştirirdik.*
 
 Yukarıdaki örneğimizde gördüğünüz gibi,
 animasyon tanımında
@@ -1319,7 +1321,7 @@ animasyon tanımında
 + `To` özelliği özellik değişiminin bitiş değerini belirler.
 + `Duration` ile değişim süresini belirleriz. 
   Bu özelliğin değeri **saat:dakika:saniye** formatındadır.
-> *saniye kısmını ondalıklı yaparsak milisaniyelik çok kısa süreli
+> ***saniye** kısmını ondalıklı yaparsak milisaniyelik çok kısa süreli
    animasyon tanımları yapabiliriz.*
 
 + `AutoReverse` özelliğine **True** değer atarsak özellik değişimi
@@ -1327,5 +1329,122 @@ animasyon tanımında
 > *`AutoReverse` için varsayılan değer **False** olduğu için,
     bu özelliği atanmamış bir animasyon bitince geri dönüş olmaz.*
 
+Burada yalnızca bir animasyon örneği sunduk.
+Başka animasyon örnekleri için
+[BST206-2022](https://github.com/freebelion/BST206-2022)
+projemizdeki **WpfAnim1** ve **WpfAnim2** projelerine bakabilirsiniz.
 
 ### Kontrol Şablonu (ControlTemplate) Tanımlamak
+
+İçerik ve stil belirleme denemelerimizde düğme kontrolünün
+bazı özelliklerinin standart olduğunu farketmişsinizdir.
+Örneğin, biçimi dikdörttgen oluyor hep.
+
+Standart özellikleri de değiştirmek istersek,
+kontrolün görünümünü temelden değiştirmemiz gerekir.
+Bunu da bir içerik tanımı veya bir stil tanımı ile yapamayız.
+Kontrolün standart görünümünü belirleyen kontrol şablonunu
+(**ControlTemplate**) kendimiz yeniden tanımlamalıyız.
+
+Bunu da düzgün kafes panelin ikinci satırına eklediğimiz
+sekizinci düğme için yapacağız:
+```
+<Button Grid.Row="1" Grid.Column="3" Content="DÜĞME" FontSize="24">
+</Button>
+```
+
+Bu XAML bloku içinde düğmenin kendi görünümünü belirleyen
+şablonunu tanımlıyoruz:
+```
+    <Button Grid.Row="1" Grid.Column="3" Content="DÜĞME"
+            Background="Aquamarine" FontSize="24" Width="150" Height="120">
+        <Button.Template>
+            <ControlTemplate>
+                    
+            </ControlTemplate>
+        </Button.Template>
+    </Button>
+```
+
+Denemişseniz siz de görmüşsünüzdür:
+XAML blokunu bu şekle getirince düğme tümden yok oldu.
+Güya bir rengi var, içeriği var, kendi boyutları ve yazı boyutu var,
+ama hiç biri gözükmüyor.
+Çünkü görünümünün temeli olan kontrol şablonunu sıfırladık.
+
+**Content** özelliği belirlerken iç dekorasyon yapıyorduk.
+**Style** özelliğiyle de bazı görünüm ve davranış değişiklikleri
+olmasını sağlıyorduk.
+Ama kontrol şablonu değiştirmek bir binaya temelden girip
+yeniden inşa etmek gibidir. Artık her şeyi biz yeniden
+oluşturmak zorundayız.
+
+Örneğin, düğme elips şeklinde gözüksün dersek,
+şablon içinde bir elips şekli tanımlamalıyız:
+```
+    <ControlTemplate>
+        <Ellipse Stroke="Gray" StrokeThickness="1">
+                        
+        </Ellipse>
+    </ControlTemplate>
+```
+
+Artık düğmenin olması gereken yerde bir elips olacaktır.
+Bu elips boyutları düğme kontrolüne atadığımız boyutlarla da
+aynıdır, ama elips renk özelliğini yansıtmıyor.
+Çünkü şablon tanımında kontrole dışarıdan atanmış
+görünüm özelliklerini yansıtmadık.
+
+Elips şekli için dolgu rengini **Fill** özelliği belirler;
+bu özelliği kontrole atanan **Background** özelliğiyle
+ilişkilendirirsek renk ayarını tamamlamış oluruz:
+```
+    <ControlTemplate>
+        <Ellipse Stroke="Gray" StrokeThickness="1"
+                    Fill="{TemplateBinding Background}">
+                        
+        </Ellipse>
+    </ControlTemplate>
+```
+
+Buradaki **TemplateBinding** terimi bizim şablon tanımındaki
+bir özelliği düğme kontrolüne dışarıdan atanan bir özelliğe
+bağlamak (*bind*) içindir.
+Bu yolla eliptik düğmenin rengini dışarıdan belirleme
+imkanı sunmuş oluruz.
+
+Peki, içerik ne olacak? **Content** ile belirlediğimiz
+düğme içeriği hala gözükmüyor.
+Elips için yazılı ya da resimli bir içerik sunacak
+bir özellik yok ki onu içeriğe bağlasak?
+
+Şimdi, normalde düğme kontrolünün içeriğini sunan
+**ContentPresenter** diye alt düzey bir kontrol vardır;
+biz onu kaldırıp attık ya, yeniden oluşturmamız gerekir.
+Ama o şu an için fazla alt düzey kalıyor.
+Daha mantıklı davranıp, şablon tanımına içerik sunucu olarak
+bir **ContentControl** ekleyelim:
+```
+    <ControlTemplate TargetType="Button">
+        <Grid>
+            <Ellipse Stroke="Gray" StrokeThickness="1"
+                    Fill="{TemplateBinding Background}"/>
+            <ContentControl Content="{TemplateBinding Content}"
+                            HorizontalAlignment="Center"
+                            VerticalAlignment="Center"
+                            FontSize="{TemplateBinding FontSize}"/>
+        </Grid>
+    </ControlTemplate>
+```
+
+Dış şekil için **Ellipse** ve içerik sunucu olarak da
+**ContentControl**, bu ikisi şablonda birlikte olamazdı.
+Mecburen onları bir kafes panel (Grid) içine koyduk.
+
+İçerik sunucunun içeriğini belirleyen **Content** özelliğini
+düğme içeriğini belirleyen **Content** özelliğine bağladık.
+Yazı boyutubu belirleyen **FontSize** özelliği için de öyle yaptık.
+
+Düğme içeriği yazı değil de resim olsaydı,
+bu şablon yine de işe yarardı... saniyoruz.
+Denemeye korktuk, açıkçası. Siz deneyin ama sonucu duyurmayın.
