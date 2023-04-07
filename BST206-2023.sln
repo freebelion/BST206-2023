@@ -22,7 +22,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Dock1", "Dock1\Dock1.csproj
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StyleTemplate1", "StyleTemplate1\StyleTemplate1.csproj", "{B65AA5A0-C55E-4589-9B45-1B1F6EC33A5F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ListBox1", "ListBox1\ListBox1.csproj", "{8B98C4E1-6036-498E-BAC3-D44B417FC315}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ListBox1", "ListBox1\ListBox1.csproj", "{8B98C4E1-6036-498E-BAC3-D44B417FC315}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Binding1", "Binding1\Binding1.csproj", "{DDB38EC1-5144-4704-B257-84A3B97EDEE6}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -62,6 +64,10 @@ Global
 		{8B98C4E1-6036-498E-BAC3-D44B417FC315}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8B98C4E1-6036-498E-BAC3-D44B417FC315}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8B98C4E1-6036-498E-BAC3-D44B417FC315}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DDB38EC1-5144-4704-B257-84A3B97EDEE6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DDB38EC1-5144-4704-B257-84A3B97EDEE6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DDB38EC1-5144-4704-B257-84A3B97EDEE6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DDB38EC1-5144-4704-B257-84A3B97EDEE6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
