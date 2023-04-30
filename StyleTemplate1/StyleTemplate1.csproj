@@ -8,6 +8,13 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="Resimler\**" />
+    <EmbeddedResource Remove="Resimler\**" />
+    <None Remove="Resimler\**" />
+    <Page Remove="Resimler\**" />
+  </ItemGroup>
+
+  <ItemGroup>
     <None Remove="Images\icons8-bomb-64.png" />
   </ItemGroup>
 

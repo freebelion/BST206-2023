@@ -7,4 +7,11 @@
     <UseWPF>true</UseWPF>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Compile Remove="Resimler\**" />
+    <EmbeddedResource Remove="Resimler\**" />
+    <None Remove="Resimler\**" />
+    <Page Remove="Resimler\**" />
+  </ItemGroup>
+
 </Project>

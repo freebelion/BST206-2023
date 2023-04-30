@@ -1,4 +1,4 @@
-﻿## Grid2
+﻿# Grid2
 İlk proje örneklerimizde WPF masaüstü uygulama
 pencerelerinde standart olan kafes paneli (`Grid`)
 tanıtmak istiyoruz.
@@ -27,8 +27,7 @@ gösterilen bantlar varmış gibi gözüktü.
 
 Sol kenar bandının belli bir yerinde tıklayınca,
 kafes paneli iki yatay bölmeye ayırmış olduk:
-
-![](../Resimler/Resim4.png)
+![](Resimler/Resim4.png)
 
 ```
    <Grid.RowDefinitions>
@@ -61,7 +60,6 @@ Sonra da görünümünü ve konumunu belirleyen
 daha iyi fark edelim diye uygulama penceresini
 biraz daralltık.
 Genişliğini (`Width`) 400 piksel yaptık.
-
 "Piksel" demişken, aslında pek de doğru bir şey yazmadık.
 Normalde bilgisayarlarla bütünleşik veya ayrı kullanılan
 ekran boyutlarına göre, gerçek piksel
@@ -79,8 +77,7 @@ Araç Kutusunu (*Toolbox*) açıp,
 orada listelenen kontrollerden metin bloğu
 (`TextBlock`) kontrolünü seçtik,
 ve sürükleyerek kafes panelin üst bölmesine yerleştirdik:
-
-![](../Resimler/Resim5.png)
+![](Resimler/Resim5.png)
 
 > Bu kontrol içinde bir metin görüntüler,
 ama yalnızca görüntüler.
@@ -120,8 +117,7 @@ Siz istediğiniz başka bir sözcük veya cümle yazın.
 
 Başka değişiklikler yapmadan önce de uygulamayı çalıştırıp
 denedik:
-
-![](../Resimler/Resim6.png)
+![](Resimler/Resim6.png)
 
 Gördüğünüz gibi, yeni belirlediğimiz metin gözüküyordu,
 ama hem kutunun içindeki yazı biraz küçüktü,
@@ -151,8 +147,7 @@ geri plan rengi verelim:
            Text="Metin Blok Kontrol" />
 ```
 Şimdiki görünümü daha belirgindir:
-
-![](../Resimler/Resim7.png)
+![](Resimler/Resim7.png)
 
 Peki bu kontrolün boyutlarını belirleyen özellikler nerede?
 Bu XAML tanımında genişlik (`Width`)
@@ -229,8 +224,7 @@ Bunu görmek için `HorizontalAlignment` ve
 `VerticalAlignment` özelliklerini sildik.
 O zaman `Margin` özelliğinin dört değerinin de
 etkin olduğunu gördük:
-
-![](../Resimler/Resim8.png)
+![](Resimler/Resim8.png)
 
 Sol ve üstten on birim boşluk varken,
 kutu sağ ve alt kenarlara yapışıktı.
@@ -249,8 +243,7 @@ ve uygulama penceresini büyültüp küçülttüğümüzde
 blok kontrolün de pencereyle orantılı boyutlandığını gördük;
 genişliği pencere iç genişliği ile aynı kalırken,
 yüksekliği üst bölmenin pencereye orantısıyla değişiyordu.
-
-![](../Resimler/Resim9.png)
+![](Resimler/Resim9.png)
 
 Sağ altta resmini gösterdiğimiz son denemede
 `TextBlock` kontrolünün `TextWrapping` özelliğinin
