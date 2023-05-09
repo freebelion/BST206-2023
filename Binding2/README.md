@@ -1,5 +1,4 @@
 ﻿# Binding2
-
 Bu projeyle geliştirdiğim uygulamada
 satır ve sütun sayısı kayan ölçek kontrolleriyle
 değiştirilebilen bir pano var.
