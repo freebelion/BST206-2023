@@ -5,12 +5,14 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Grid3"
         mc:Ignorable="d"
+        FontSize="16"
         Title="MainWindow" Height="350" Width="400">
         
         <!--Bu blokta pencerenin kullandığı görsel kaynaklar olacak.-->
     <Window.Resources>
             <!--Örnek olarak, bu penceredeki tüm düğmelere uygulanacak bir stil tanımı koyduk.-->
         <Style TargetType="Button">
+            <Setter Property="FontSize" Value="24"/>
             <Setter Property="Margin" Value="5"/>
         </Style>
     </Window.Resources>
@@ -25,15 +27,15 @@
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
             <!--Hesap makinesi ekranını temsil eden metin blok kontrolü-->
-        <TextBlock Grid.Row="0" Text="Ekran" Background="Beige"/>
+        <TextBlock Grid.Row="0" Text="Ekran" Background="Beige" FontSize="20"/>
             <!--Hesap makinesi tuştakımlarını barındıran iç kafes panel-->
         <Grid Grid.Row="1" Background="Aqua">
                 <!--İç panelin dikey bölmeleri panel genişliğini 3:2 oranında paylaşıyorlar.-->
             <Grid.ColumnDefinitions>
                     <!--Sol bölme genişliği panel genişliğinin 3/5'i kadar (yani %60).-->
-                <ColumnDefinition Width="3*"/>
+                <ColumnDefinition Width="6*"/>
                 <!--Sağ bölme genişliği panel genişliğinin 2/5'i kadar (yani %40).-->
-                <ColumnDefinition Width="2*"/>
+                <ColumnDefinition Width="4*"/>
             </Grid.ColumnDefinitions>
             
                 <!--Rakam düğmelerini barındıran kafes panel-->
@@ -55,7 +57,7 @@
                 
                     <!--Rakam düğmelerini ait oldukları bölme numaralarıyla sıralıyoruz.-->
                 <Button Grid.Row="0" Grid.Column="0" Content="1"/>
-                    <!--Yerlerini doğru belirlemişsek, nasıl sıralandıkları fark etmez.-->
+                <!--Yerlerini doğru belirlemişsek, nasıl sıralandıkları fark etmez.-->
                 <Button Grid.Row="2" Grid.Column="2" Content="9"/>
                 <Button Grid.Row="0" Grid.Column="1" Content="2"/>
                 <Button Grid.Row="0" Grid.Column="2" Content="3"/>

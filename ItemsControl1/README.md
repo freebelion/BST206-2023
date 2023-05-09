@@ -14,7 +14,7 @@ yazı boyutunu (**FontSize**) biraz büyüttük.
 Bu projeyle geliştireceğimiz uygulamada
 hayali hisse senetlerini listeleteceğiz.
 Bu nedenle, bir hisseyi temsil edecek
-yeni bir nbesne türü,
+yeni bir nesne türü,
 yani bir sınıf (**class**) oluşturacağız.
 
 Proje organizasyonu görünümünde (*Solution View*)

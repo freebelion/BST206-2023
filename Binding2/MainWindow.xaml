@@ -1,0 +1,65 @@
+﻿<Window x:Class="Binding2.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Binding2"
+        mc:Ignorable="d"
+        FontSize="24"
+        Title="MainWindow" Height="450" Width="800">
+    
+    <Window.DataContext>
+        <local:Pano x:Name="MayinTarlasi">
+            
+        </local:Pano>
+    </Window.DataContext>
+
+    <Window.Resources>
+        <Style x:Key="HucreStil" TargetType="Button">
+            <Style.Triggers>
+                <DataTrigger Binding="{Binding Path=MayinVar}" Value="True">
+                    <Setter Property="Button.Background" Value="Red" />
+                </DataTrigger>
+                <Trigger Property="IsMouseOver" Value="True">
+                    <Setter Property="Content" Value="{Binding Path=KomsuMayinSayisi}"/>
+                </Trigger>
+            </Style.Triggers>
+        </Style>
+    </Window.Resources>
+    
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="25"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="25"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+
+        <Slider Grid.Row="0" Grid.Column="1"
+                Orientation="Horizontal"
+                Minimum="5" Maximum="30" Interval="1"
+                Value="{Binding Path=SutunSayisi}"/>
+
+        <Slider Grid.Row="1" Grid.Column="0"
+                Orientation="Vertical"
+                Minimum="5" Maximum="20" Interval="1"
+                Value="{Binding Path=SatirSayisi}"/>
+
+        <ItemsControl Grid.Row="1" Grid.Column="1"
+                      ItemsSource="{Binding Path=Hucreler}">
+            <ItemsControl.ItemsPanel>
+                <ItemsPanelTemplate>
+                    <UniformGrid Rows="{Binding Path=SatirSayisi}"
+                                 Columns="{Binding Path=Sutunsayisi}"/>
+                </ItemsPanelTemplate>
+            </ItemsControl.ItemsPanel>
+            <ItemsControl.ItemTemplate>
+                <DataTemplate>
+                    <Button Style="{StaticResource HucreStil}"/>
+                </DataTemplate>
+            </ItemsControl.ItemTemplate>
+        </ItemsControl>
+    </Grid>
+</Window>
